@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+</head>
+<style>
+    div{
+        background-color: red;
+    }
+    .red{
+        background-color: red;
+    }
+    #green{
+        background-color: green;
+    }
+    div > p{
+        color: blue;
+        background-color: brown;
+    }
+    div p{
+        color: blue;
+        background-color: brown;
+    }
+    *{
+        margin:0;
+        padding:0;
+    }
+    a:visited{
+        color: yellow;
+    }
+    a:link{
+        color: green;
+    }
+    a:active{
+        background-color: red;
+    }
+    a:hover{
+        background-color: yellow;
+    }
+    p/:first-child{
+        background-color: aqua;
+    }
+    
+</style>
+<body>
+    <main>
+        <p>I am First</p>
+        <p>I am Second</p>
+    </main>
+    <div class="red">
+        Iam a div
+        <article>
+            <p>I am a para inside div</p>
+        </article>
+    </div>
+    <div id="green">
+        I am another div
+    </div>
+    <a href="https://www.google.com">Go to google</a>
+    <a href="https://www.facebook.com">Go to Fackebook</a>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Modle</title>
+</head>
+<style>
+    *{
+        background-color: pink;
+    }
+    .box1{
+        color: yellow;
+        padding: 23px;
+        margin: 5px;
+        border: 2px black;
+        height: 100px;
+        box-sizing: border-box;
+    }
+    .box2{
+        color: black;
+        padding: 23px;
+        margin: 5px;
+        border: 2px black;
+        height: 200px;
+        box-sizing: border-box;
+    }
+</style>
+<body>
+    <div class="box box1">this is box</div>
+    <div class="box box2">this is an another box</div> 
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS fonts</title>
+</head>
+<style>
+    h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+</style>
+<body>
+    <h1>Different types of fonts</h1>
+    <p>LOOK AT THESE FONTS</p>
+    
+</body>
+</html>

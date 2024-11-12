@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <title>Survey-form</title>
+   <link rel="stylesheet" href="styles.css"></link>
+ </head>
+ <body>
+   <h1 id="title">About your work-life</h1>
+   <p id="description">
+     Fill the form for further information
+   </p>
+   <form id="survey-form">
+       <div>
+         <label id="name-label">Enter your full name
+           <div>
+             <input id="name" type="text" name="name" placeholder="Enter your name" required>
+           </div>
+         </label>
+       </div>
+       <div>
+         <label id="email-label">Enter you email address
+           <div>
+             <input id="email" type="email" name="email" placeholder="Enter you email" required>
+           </div>
+         </label>
+       </div>
+       <div>
+         <label id="number-label">Enter your age
+           <div>
+             <input id="number" type="number" name="number" min="18" max="100" placeholder="age" required>
+           </div>
+         </label>
+       </div>Are you any of these below followings
+       <div>
+         <select id="dropdown">
+         <option>above 18</option>
+         <option>below 18</option>
+         </select>
+       </div>
+       <legend>Do you want to change your company?
+       <div>
+         <label>
+           <input type="radio" value="inline" name="one">
+           yes
+         </label>
+       </div>
+       </legend>
+       <div>
+         <label>
+           <input type="radio" value="inline" name="one">
+           no
+         </label>
+       </div>
+       <legend>
+          Your choice in job!!!!
+          <div>
+            <label>
+              <input type="checkbox" value="inline" name="two">
+              near to work
+            </label>
+          </div>
+        </legend>
+       </div>
+       <div>
+       <label>
+         <input type="checkbox" value="inline" name="two">
+         easy transportation
+       </label>
+       </div>
+       <div>
+       <label>
+         <input type="checkbox" value="inline" name="two">
+         high package
+       </label>
+       </div>
+       <div>
+       <label>
+         <input type="checkbox" value="inline" name="two">
+         supportive colleague
+       </label>
+       </div>
+       <label>
+         <input type="checkbox" value="inline" name="two">
+         Accomidation
+       </label>
+       </div>
+        <legend>
+          Tell something about yourself
+          <div>
+            <textarea>i love coding in the beach.......
+            </textarea>
+          </div>
+        <legend>
+        <fieldset>
+          <legend>
+            <div>Did you enjoy this form filling?</div>
+            <div class="form1">
+             <input id="yes1" type="radio" name="yes1" value="yes" checked>Yes
+             <input id="yes1" type="radio" name="yes1" value="maybe">Maybe
+             <input type="radio" name="no" value="maybe">No</input>
+            </div>
+          </legend>
+        </fieldset>  
+        <input class="submit" id="submit" type="submit">
+   </form>
+ </body>
+  </html>
+<DOCTYPE html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gacha Game Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+    <h1 id="title" class="text-center">Gacha Game Survey</h1>
+    <p id="description" class="description text-center">Let us know your opinion about the game by answering the following survey.</p>
+    </header>
+    <p>Required items: (<span class='asterisk'>*</span>)</p>
+    <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name <span class='asterisk'>*</span> </label><input id="name" name="name" type="text" placeholder="Enter your name"
+" required /></div>
+<div class="form-group">
+     <p>Tell us your gender <span class='asterisk'>*</span></p> 
+     <label><input type="radio" name="gender" value="male" class="input-radio" checked  /> Male</label>
+     <label><input type="radio" name="gender" value="female" class="input-radio"  /> Female</label>
+     <label><input type="radio" name="gender" value="other" class="input-radio"  /> Other</label></div>
+         <div class="form-group">
+<label id="number-label" for="number">Tell us your age <span class='asterisk'>*</span></label><input id="number" type="number" name="age" min="14" max="110" placeholder="Age" /></div>
+    <div class="form-group">
+  <p>Tell us your current ocupation <span class='asterisk'>*</span></p>
+  <label><input type="radio" name="ocupation" value="student" class="input-radio" checked /> Student</label>
+  <label><input type="radio" name="ocupation" value="full-time-employee" class="input-radio" /> Full-time employee</label>
+  <label><input type="radio" name="ocupation" value="part-time-employee" class="input-radio" /> Part-time employee</label>
+  <label><input type="radio" name="ocupation" value="self-employed" class="input-radio" /> Self-employed</label>
+  <label><input type="radio" name="ocupation" value="unemployed" class="input-radio" /> Unemployed</label>
+  <label><input type="radio" name="ocupation" value="other" class="input-radio" /> Other</label>
+</div>
+<div class="form-group">
+<p>How did you found out about the game? <span class='asterisk'>*</span></p>
+    <select id="dropdown" name="where-how" class="form-control" required>
+    <option value="">select one</option>
+    <option value="twitter">Ad on X (formerly Twitter)</option>
+    <option value="instagram">Ad on Instagram</option>
+    <option value="yt">Ad on YouTube</option>
+    <option value="otherMedia">Video ad on other media
+    <option value="friendFamily">Introduced by a friend/family</option>
+    <option value="other">Other</option></select>
+</div>
+<div class="form-group">
+  <p>What do you think needs improvement or do you want to see added to the game? <span class="clue">(multi choice - 3 max)</span> <span class='asterisk'>*</span></p>
+  <label><input type="checkbox" name="suggestions" value="summonRates" class="input-checkbox" checked /> Summon rates</label>
+  <label><input type="checkbox" name="suggestions" value="gameplay" class="input-checkbox" required /> Gameplay</label>
+  <label><input type="checkbox" name="suggestions" value="moreGameModes" class="input-checkbox" required /> More game modes</label>
+  <label><input  type="checkbox" name="suggestions" value="cinematicAnimations" class="input-checkbox" /> Cinematic animations</label>
+  <label><input type="checkbox" name="suggestions" value="characterArt" class="input-checkbox" /> Characters' art</label>
+  <label><input type="checkbox" name="suggestions" value="pvp" class="input-checkbox" /> PvP implementation</label>
+  <label><input type="checkbox" name="suggestions" value="moreSummonAnimations" class="input-checkbox" /> More summon animations</label>
+  <label><input type="checkbox" name="suggestions" value="missionRewards" class="input-checkbox" /> Mission rewards</label>
+  <label><input type="checkbox" name="suggestions" value="pve" class="input-checkbox" /> More PvE content</label>
+</div>
+<div class="form-group" 
+ <label for="personal-suggestion">Please tell us if you have any other suggestions <span class="clue">(optional)</span>
+<textarea id="personal-suggestion" name="personalSuggestion" rows="5" cols="40" placeholder="Enter your suggestions here" class="input-textarea" /></textarea></div>
+    <div class="form-group">
+    <label for="email" id="email-label"> Lastly please introduce your email to obtain the rewards in-game <span class='asterisk'>*</span><input id="email" type="email" name="email" placeholder="Enter your email" required ></label>
+    </div>
+      <div class="form-group">
+      <button type="submit" id="submit" class="submit-button" />Submit</button>
+      </form>
+       </div>
+  </body>
+</html>
+<DOCTYPE html>
